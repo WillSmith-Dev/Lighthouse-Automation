@@ -7,9 +7,6 @@ MAIN_DIR=./MFJIF
 OUTPUT_TYPE=html
 DELIMITER=,
 
-# Localisation is for if you have different versions of pages for different countries e.g: US and UK
-LOCALISATION=US
-
 # Read first line from pages file
 read -r PAGE_URIS < page_uris.txt
 
@@ -47,7 +44,7 @@ do
     # --throttling.cpuSlowdownMultiplier to mimic mobile devices
     # --output specifies the type
     # --output-path specifies the output path set above.
-    lighthouse $URL/$LOCALISATION/$PAGE_URI --quiet --throttling.cpuSlowdownMulitplier=6 --output=$OUTPUT_TYPE --output-path=$OUTPUT_PATH
+    lighthouse $URL/$PAGE_URI --quiet --throttling.cpuSlowdownMulitplier=6 --output=$OUTPUT_TYPE --output-path=$OUTPUT_PATH
     
     # Visit: https://github.com/GoogleChrome/lighthouse#using-the-node-cli for more options of the lighthouse command
 

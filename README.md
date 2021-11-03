@@ -8,8 +8,11 @@ Add your page URIs to the page_uris.txt file. **Do not encase fields**. **Curren
 
 ### Configurables
 `URL` The URL of the website.
+
 `MAIN_DIR` The directory to contain all of the lighthouse reports. **NOTE:** Sub directories will be added for page URIs not in the route folder.
+
 `OUTPUT_TYPE` Accepted values: **html**,**json**.
+
 `DELIMITER` The delimiter used in your page_uris.txt file.
 
 ## Running

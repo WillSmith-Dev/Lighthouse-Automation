@@ -22,3 +22,4 @@ Open a terminal in the route of this project and run the following:
 
 **Windows Command Line:** `bash ./lighthouse.sh` or `bash -x ./lighthouse.sh` to debug any issues.
 
+# I do not usually work with this language at all, so please excuse any shoddy practices.
